@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 30px;
+  width: 100vw;
+  /* background-color: rgb(235, 239, 246); */
+  background-color: #181b20;
+  /* color: #181b20; */
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 1fr 1.5fr;
+  align-content: center;
+  margin-top: 30px;
+  padding: 3px 50px 0;
+  /* box-shadow: 3px 0px 5px #3762EA; */
+  /* border-top: 3px solid #3762EA; */
+}
+
+.footer__p {
+  color: white;
+}

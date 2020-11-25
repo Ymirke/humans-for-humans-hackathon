@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb-typescript"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": [2, { "allow": ["warn", "error"] }],
+    "no-underscore-dangle": [0],
+    "no-alert": [0]
+  }
+}

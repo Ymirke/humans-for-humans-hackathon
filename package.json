@@ -1,0 +1,36 @@
+{
+  "name": "graduation-project",
+  "version": "1.0.0",
+  "description": "graduation-project",
+  "main": "/backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "installClient": "cd client && npm install",
+    "installServer": "cd server && npm install",
+    "installAll": "npm install && npm run installClient && npm run installServer",
+    "startClient": "cd client && npm run start",
+    "startServer": "cd server && npm run dev",
+    "dev": "concurrently \"npm run startClient\" \"npm run startServer\"",
+    "start": "cd server && npm i && node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ymirke/graduation-project.git"
+  },
+  "author": "Ymir Egilson, Alina Bylkova and Markus Myrland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ymirke/graduation-project/issues"
+  },
+  "homepage": "https://github.com/Ymirke/graduation-project#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "babel-jest": "^24.9.0",
+    "concurrently": "^5.2.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {}
+}
